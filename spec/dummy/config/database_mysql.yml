@@ -2,6 +2,9 @@ default: &default
   adapter: mysql2
   pool: 100
   timeout: 5000
+  charset: utf8mb4
+  collation: utf8mb4_bin
+  encoding: utf8mb4
 
 development:
   <<: *default
@@ -10,6 +13,8 @@ development:
 test:
   <<: *default
   database: kudzu_test
+  host: 127.0.0.1
+  username: root
 
 production:
   <<: *default

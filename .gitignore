@@ -1,13 +1,11 @@
 .bundle/
-.project
 Gemfile.lock
 pkg/
 coverage/
+gemfiles/*gemfile.lock
 spec/dummy/config/database.yml
 spec/dummy/db/schema.rb
-spec/dummy/db/*.sqlite3
-spec/dummy/db/*.sqlite3-journal
+spec/dummy/db/*.sqlite3*
 spec/dummy/log/*.log
 spec/dummy/tmp/
 spec/dummy/.sass-cache
-
