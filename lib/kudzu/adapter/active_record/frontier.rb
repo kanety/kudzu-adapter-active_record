@@ -10,7 +10,7 @@ module Kudzu
         def enqueue(links, depth: 0)
           @monitor.synchronize do
             links = filter_existing_urls(links)
-            Link.import(links)
+            Link.bulk_import(links)
             links
           end
         end
