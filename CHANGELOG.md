@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.2.1
+
+* Add `frozen_string_literal: true`.
+
 ## 1.2.0
 
 * Prefer `bulk_import` method to import links.
