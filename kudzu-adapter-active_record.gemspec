@@ -16,8 +16,10 @@ Gem::Specification.new do |s|
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
 
+  s.required_ruby_version = ">= 3.0"
+
   s.add_dependency "kudzu", ">= 1.1"
-  s.add_dependency "activerecord"
+  s.add_dependency "activerecord", ">= 7.0"
   s.add_dependency "activerecord-import"
 
   s.add_development_dependency "webrick"
